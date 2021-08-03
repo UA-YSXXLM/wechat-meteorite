@@ -1,0 +1,22 @@
+.head{
+  background: #fff;
+  margin: 20rpx;
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+  border-radius: 5rpx;
+}
+.head .head-img image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+}
+.head .head-name{
+  margin-left: 30rpx;
+}
+.getUser{
+  background: none;
+  font-weight: normal;
+  width: auto;
+  height: auto;
+}

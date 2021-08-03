@@ -1,0 +1,43 @@
+<swiper duration="{{duration}}" bindchange="swiperChange" easing-function="easeInOutCubic" class="cyberspeak-swiper">
+  <block wx:for="{{ list }}" wx:key="_id">
+    <swiper-item>
+      <view class="cyberspeak-swiper-item">
+        <view class="main">
+
+          <view class="item">
+            <view class="head">
+              <view class="head-img">
+                <image style="width: 70rpx;height: 70rpx;" src="{{ item.avatarUrl || '../../static/img/head.png' }}"></image>
+              </view>
+              <view class="head-box">
+                <view class="head-name">{{ item.nickName }}</view>
+                <!-- <view class="head-desc">人民有信仰，名族有希望。</view> -->
+              </view>
+            </view>
+
+            <view url="/pages/cyberspeak/detail/detail" hover-class="none" class="item-box">
+              <view class="item-title">{{ item.title }}</view>
+              <view class="item-content" wx:if="{{ item.explain }}">{{ item.explain }}</view>
+              <view class="item-image" bindtap="previewImg" data-img="{{ item.imageSrc }}" wx:if="{{ item.imageSrc }}">
+                <image mode="aspectFill" src="{{ item.imageSrc }}" />
+              </view>
+            </view>
+
+            <view class="item-handle">
+              <view class="handle-box">
+                <!-- 评论数 -->
+                <view class="item-comment"><text class="icon icon-wsdzb_zzgzt_zzsh_mzpy_dymzpyjl"></text> {{ item.commentNum }}</view>
+                <!-- 点赞数 -->
+                <view class="item-like"><text class="icon icon-good_active-copy"></text> {{ item.likeNum }}</view>
+              </view>
+              <!-- <view class="item-inform"><text class="icon icon-jubao"></text>举报</view> -->
+            </view>
+          </view>
+
+
+
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

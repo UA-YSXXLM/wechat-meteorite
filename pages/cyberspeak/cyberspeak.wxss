@@ -1,0 +1,100 @@
+.cyberspeak-swiper{
+  height: 100vh;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item{
+  height: 100vh;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .main{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10px #ccc;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head{
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head .head-img{
+  margin-right: 20rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head .head-img image{
+  border-radius: 100%;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head .head-box{
+  flex: 1;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head .head-box .head-name{
+  font-size: 24rpx;
+  color: #000;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .head .head-box .head-desc{
+  font-size: 20rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box{
+  flex: 1;
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box .item-title{
+  color: #000;
+  font-size: 30rpx;
+  position: relative;
+  padding-left: 15rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box .item-title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 4rpx;
+  height: 80%;
+  top: 10%;
+  background: #07c160;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box .item-content{
+  color: #666;
+  font-size: 26rpx;
+  padding: 20rpx 0;
+  flex: 1;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box .item-image{
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  flex: 1;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-box .item-image image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-handle{
+  display: flex;
+  padding: 0 30rpx 20rpx;
+  color: #555;
+  font-size: 24rpx;
+}
+
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-handle .handle-box {
+  flex: 1;
+  display: flex;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-handle .handle-box .item-comment{
+  margin-right: 40rpx;
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-handle .item-inform{
+
+}
+.cyberspeak-swiper .cyberspeak-swiper-item .item .item-handle .item-inform text{
+  margin-right: 10rpx;
+}

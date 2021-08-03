@@ -1,0 +1,12 @@
+<view>
+  <view class="head">
+    <view class="head-img">
+      <image src="{{userInfo.avatarUrl || '../../static/img/head.png'}}"></image>
+    </view>
+    <view class="head-name">
+      <text wx:if="{{ userInfo.nickName }}">{{ userInfo.nickName }}</text>
+      <button class="getUser" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </view>
+  </view>
+  
+</view>

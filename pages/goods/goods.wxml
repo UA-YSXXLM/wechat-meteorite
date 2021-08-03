@@ -1,0 +1,15 @@
+<!--pages/goods/goods.wxml-->
+<view wx:for="{{ list }}" wx:key="_id" class="list-item">
+  <text>{{index}}：</text>
+  <text>{{item.name}}</text>
+  <text>--</text>
+  <text>{{item.price}}</text>
+</view>
+<view class="page-box">
+  <button size="mini" wx:if="{{ page>1 }}" bindtap="last">上一页</button>
+  <text>{{ page }}/{{ pageNum }}</text>
+  <button size="mini" wx:if="{{ page<pageNum }}" bindtap="next">下一页</button>
+</view>
+<input type="text" value="{{ name }}" data-model="name" bindinput="handleInput" class="txt"/>
+<input type="text" value="{{ price }}" data-model="price" bindinput="handleInput" class="txt"/>
+<button bindtap="addGoods">添加</button>

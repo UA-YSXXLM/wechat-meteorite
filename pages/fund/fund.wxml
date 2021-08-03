@@ -1,0 +1,39 @@
+<mp-cells ext-class="my-cells" title="统计">
+  <mp-cell value="date" footer="{{ date }}"></mp-cell>
+  <mp-cell value="数量" footer="{{ sum }}"></mp-cell>
+  <mp-cell value="涨跌数" footer="{{ orNum }}"></mp-cell>
+  <mp-cell value="涨跌比例" footer="{{ ratio }}"></mp-cell>
+</mp-cells>
+<mp-cells title="今日涨跌比例">
+  <mp-cell show-error prop="bl" title="" ext-class="">
+    <input bindinput="formInputChange" value="{{ bl }}" data-field="bl" class="weui-input" placeholder="请输入" />
+    <icon slot="footer" type="cancel" class="icon-small" color="#ccc" bindtap="cancel" data-field="bl"></icon>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="今日投入">
+  <mp-cell show-error prop="tr" title="" ext-class="">
+    <input bindinput="formInputChange" value="{{ tr }}" data-field="tr" class="weui-input" placeholder="请输入" />
+    <icon slot="footer" type="cancel" class="icon-small" color="#ccc" bindtap="cancel" data-field="tr"></icon>
+  </mp-cell>
+</mp-cells>
+<view class="weui-btn-area">
+  <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+</view>
+
+<view>
+  <view wx:for="{{ list }}" wx:key="item">{{ item }}</view>
+</view>
+
+<view class="item">
+  <view>-3.49(0)</view>
+  <view>-0.58(4387.15/4428.82)</view>
+  <view>-7.90(4995/5000)</view>
+  <view>+0.33(7992/8000)</view>
+  <view>-5.52(3196.8/3200)</view>
+  <view>-1.43(9990/10000)</view>
+  <view>-2.8(1998/2000)</view>
+  <view>+0.58(0/0)</view>
+  <view>-2.75(0/0)</view>
+  <view>2.43(0/-5000)</view>
+  <view>？(0/0)</view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/fund/fund/two",
+    "pages/fund/fund",
+    "pages/cyberspeak/cyberspeak",
+    "pages/publish/publish",
+    "pages/my/my",
+    "pages/cyberspeak/detail/detail",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/goods/goods",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "陨星社区",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#07c160",
+    "list": [{
+      "pagePath": "pages/publish/publish",
+      "text": "发布",
+      "iconPath": "./static/img/tabBar/publish.png",
+      "selectedIconPath": "./static/img/tabBar/selected_publish.png"
+    }, {
+      "pagePath": "pages/cyberspeak/cyberspeak",
+      "text": "cyberspeak",
+      "iconPath": "./static/img/tabBar/cyberspeak.png",
+      "selectedIconPath": "./static/img/tabBar/selected_cyberspeak.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "./static/img/tabBar/my.png",
+      "selectedIconPath": "./static/img/tabBar/selected_my.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

@@ -1,0 +1,14 @@
+/* pages/goods/goods.wxss */
+.txt{
+  border: 1px solid #eee;
+}
+.list-item{
+  border: 1px solid #eee;
+  margin: 10px 20px;
+}
+.page-box{
+  text-align: right;
+}
+.page-box text{
+  vertical-align: top;
+}

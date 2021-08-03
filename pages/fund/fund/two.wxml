@@ -1,0 +1,41 @@
+<mp-cells ext-class="my-cells" title="统计">
+  <mp-cell value="date" footer="{{ date }}"></mp-cell>
+  <mp-cell value="数量" footer="{{ sum }}"></mp-cell>
+  <mp-cell value="涨跌数" footer="{{ orNum }}"></mp-cell>
+  <mp-cell value="涨跌比例" footer="{{ ratio }}"></mp-cell>
+</mp-cells>
+<mp-cells title="今日涨跌比例">
+  <mp-cell show-error prop="bl" title="" ext-class="">
+    <input bindinput="formInputChange" value="{{ bl }}" data-field="bl" class="weui-input" placeholder="请输入" />
+    <icon slot="footer" type="cancel" class="icon-small" color="#ccc" bindtap="cancel" data-field="bl"></icon>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="今日投入">
+  <mp-cell show-error prop="tr" title="" ext-class="">
+    <input bindinput="formInputChange" value="{{ tr }}" data-field="tr" class="weui-input" placeholder="请输入" />
+    <icon slot="footer" type="cancel" class="icon-small" color="#ccc" bindtap="cancel" data-field="tr"></icon>
+  </mp-cell>
+</mp-cells>
+<view class="weui-btn-area">
+  <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+</view>
+
+<view>
+  <view wx:for="{{ list }}" wx:key="item">{{ item }}</view>
+</view>
+<!-- 
+  -1.24 -0.54 -1.9 -1.84 +5.36 +1.34 +1.41 +0.43 +0.78 -1.89 +0.17 -0.26 -0.35 +1.05 +0.35 -0.17 +5.03 +1.32 -0.16 +0.65 -1.62
+  +0.66 +0.41 -1.55 +1.91 -2.28 +1.16 +3.37 -2.47 -3.43 -1.10 +4.78 +1.63 -1.52 +1.55
+  10000
+  1084.41
+  11.04
+ -->
+<view class="item">
+  <view>
+  100份-底仓20=剩余80
+  </view>
+  <view>当天：（-5%/5）（-3%-5%/3）（1.5%-3%/2）</view>
+  <view>连涨3天5%跌-3%以内不补</view>
+  <view>连跌3天加起来-3%以上补3份,超过5%补5份</view>
+  <view>一段时间下跌大于5%补5份，大于10%补10</view>
+</view>

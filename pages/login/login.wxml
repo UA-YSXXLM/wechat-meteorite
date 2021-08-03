@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="userinfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl || '../../static/img/head.png'}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName || '未授权'}}</text>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </view>
+</view>

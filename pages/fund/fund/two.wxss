@@ -1,0 +1,7 @@
+.item{
+  overflow: hidden;
+}
+.item text{
+  padding: 0 30rpx;
+  display: inline-block;
+}

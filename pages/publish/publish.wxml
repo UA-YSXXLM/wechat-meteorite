@@ -1,0 +1,17 @@
+<view class="publish">
+  <view class="publish-title"><input type="text" value="{{ title }}" bindinput="handleInput" data-model="title" placeholder="最新网络用语"/></view>
+  <view class="publish-detail">
+    <textarea style="white-space:pre" value="{{ explain }}" bindinput="handleInput" data-model="explain" placeholder="用语释义:\n\n1.说明起源\n2.建议举例\n3.如不是原创，请注明出处"></textarea>
+  </view>
+  <view class="publish-image">
+    <view class="publish-image-item" wx:if="{{ imageSrc }}" bindtap="previewImg">
+      <image src="{{ imageSrc }}"/>
+    </view>
+    <view class="publish-image-upload" bindtap="uploadImg" wx:else>
+      <text class="icon icon-icon-add-3"></text>
+      <view>添加图片</view>
+    </view>
+  </view>
+</view>
+
+<button type="primary" bindtap="uploadcyberspeak" disabled="{{ title == '' || (explain=='' && imageSrc=='') }}">发布</button>
